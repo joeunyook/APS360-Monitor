@@ -11,8 +11,13 @@ A lightweight monitor that classifies LLM agent trajectories
 - **Baseline:** TF-IDF + logistic regression.
 - **Metrics:** precision, recall, F1, PR-AUC, inference latency.
 
+## Files
+- `src/data.py` — trajectory → text, 80/10/10 split by trajectory, chunking
+- `src/baseline.py` — TF-IDF + logistic regression, evaluation metrics
+- `src/model.py` — DistilBERT chunk encoder + pooling + linear head
+
 ## Status
-Proposal stage. Code to follow.
+Proposal stage: minimal skeleton code.
 
 ## Setup
 ```
